@@ -165,30 +165,6 @@ export default function SignupForm() {
     },
   };
 
-  // const countries = [
-  //   "United States",
-  //   "Canada",
-  //   "United Kingdom",
-  //   "Australia",
-  //   "India",
-  //   "Germany",
-  // ];
-  // const states = [
-  //   "California",
-  //   "Texas",
-  //   "New York",
-  //   "Florida",
-  //   "Washington",
-  //   "Illinois",
-  // ];
-  // const cities = [
-  //   "New York City",
-  //   "Los Angeles",
-  //   "Chicago",
-  //   "Houston",
-  //   "Phoenix",
-  //   "Philadelphia",
-  // ];
   const countryCodes = ["+1", "+44", "+61", "+91", "+49", "+33"];
 
   if (formSubmitted) {

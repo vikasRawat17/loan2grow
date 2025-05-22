@@ -64,7 +64,7 @@ export default function SigninForm() {
       .then(() => {
         setLoginSuccess(true);
         setTimeout(() => {
-          navigate("/");
+          navigate("/products");
         }, 2000);
       })
       .catch((err) => {
@@ -126,19 +126,7 @@ export default function SigninForm() {
         <p className="text-gray-600 text-center">
           You have been logged in successfully.
         </p>
-        {/* <button
-          onClick={() => {
-            setLoginSuccess(false);
-            setFormData({
-              email: "",
-              password: "",
-              rememberMe: false,
-            });
-          }}
-          className="mt-6 px-6 py-2 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-full hover:from-teal-500 hover:to-blue-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
-        >
-          Home
-        </button> */}
+     
       </motion.div>
     );
   }

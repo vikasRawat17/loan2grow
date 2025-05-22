@@ -1,6 +1,6 @@
 import React from "react";
 
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import ForgotPass from "./components/auth/forgotpass";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/products/Products";
@@ -17,7 +17,10 @@ export const routes = createBrowserRouter([
     children: [
       {
         index: true,
-
+        element: <Navigate to="/signup" replace />,
+      },
+      {
+        path: "/products",
         element: (
           <ProtectedRoute>
             <Products />
@@ -35,12 +38,12 @@ export const routes = createBrowserRouter([
     ],
   },
   {
-    path: "/login",
-    element: <SigninForm />,
-  },
-  {
     path: "/signup",
     element: <SignupForm />,
+  },
+  {
+    path: "/login",
+    element: <SigninForm />,
   },
   {
     path: "/forgot",

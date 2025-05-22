@@ -51,7 +51,7 @@ function Navbar() {
             <div className="hidden md:block">
               <ul className="flex gap-8 text-gray-700 font-medium">
                 <motion.li
-                  onClick={() => navigate("/")}
+                  onClick={() => navigate("/products")}
                   whileHover={{ scale: 1.1, color: "#3B82F6" }}
                   className="cursor-pointer transition-colors relative group"
                 >
@@ -59,7 +59,7 @@ function Navbar() {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                 </motion.li>
                 <motion.li
-                  onClick={() => navigate("/")}
+                  onClick={() => navigate("/products")}
                   whileHover={{ scale: 1.1, color: "#3B82F6" }}
                   className="cursor-pointer transition-colors relative group"
                 >
